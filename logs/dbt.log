@@ -1,0 +1,230 @@
+[0m21:36:30.852383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b321d2ca6f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b321d81a8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b321d81a390>]}
+
+
+============================== 21:36:30.856130 | aeeed343-1dbe-4fbb-966d-7a1f717a97c9 ==============================
+[0m21:36:30.856130 [info ] [MainThread]: Running with dbt=1.8.4
+[0m21:36:30.856895 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/srpantano/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init dbt-bigquery', 'send_anonymous_usage_stats': 'True'}
+[0m21:36:30.866061 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/srpantano/.dbt')}
+[0m21:36:30.866652 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m21:37:22.351926 [error] [MainThread]: Encountered an error:
+
+[0m21:37:22.354092 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/dbt/cli/main.py", line 470, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/dbt/task/init.py", line 325, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/dbt/task/init.py", line 279, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:37:22.355393 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 51.56573, "process_user_time": 1.425596, "process_kernel_time": 0.139764, "process_mem_max_rss": "87316", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m21:37:22.356154 [debug] [MainThread]: Command `dbt init` failed at 21:37:22.356018 after 51.57 seconds
+[0m21:37:22.356641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b321d2966c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b321d2ca6f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b321cceedb0>]}
+[0m21:37:22.357246 [debug] [MainThread]: Flushing usage events
+[0m21:37:31.677897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f650178470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f651a5a390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f65092c3b0>]}
+
+
+============================== 21:37:31.681623 | d2fd7305-704d-4345-9f6e-3fe08e8823d2 ==============================
+[0m21:37:31.681623 [info ] [MainThread]: Running with dbt=1.8.4
+[0m21:37:31.682426 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/srpantano/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init dbt-bigquery', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:37:37.397904 [error] [MainThread]: Encountered an error:
+
+[0m21:37:37.400187 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/dbt/cli/main.py", line 470, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/dbt/task/init.py", line 325, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/dbt/task/init.py", line 279, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:37:37.401490 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 5.7809753, "process_user_time": 1.419944, "process_kernel_time": 0.143632, "process_mem_max_rss": "87312", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m21:37:37.402210 [debug] [MainThread]: Command `dbt init` failed at 21:37:37.402073 after 5.78 seconds
+[0m21:37:37.402689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f64f996150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f64f85ec90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f64f77e0f0>]}
+[0m21:37:37.403232 [debug] [MainThread]: Flushing usage events
+[0m21:37:45.197760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8e9c4bec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8e8656240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8e839dbb0>]}
+
+
+============================== 21:37:45.201495 | 135decb9-1e44-4148-a0b8-9804703df7e2 ==============================
+[0m21:37:45.201495 [info ] [MainThread]: Running with dbt=1.8.4
+[0m21:37:45.202339 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/srpantano/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init dbt_bigquery', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:37:45.212025 [debug] [MainThread]: Starter project path: /home/srpantano/anaconda3/envs/dbt-bq/lib/python3.12/site-packages/dbt/include/starter_project
+[0m21:37:45.215102 [info ] [MainThread]: 
+Your new dbt project "dbt_bigquery" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:37:45.215683 [info ] [MainThread]: Setting up your profile.
+[0m21:41:16.229544 [info ] [MainThread]: Profile dbt_bigquery written to /home/srpantano/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:41:16.231035 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 211.08997, "process_user_time": 2.584201, "process_kernel_time": 0.365201, "process_mem_max_rss": "196616", "process_out_blocks": "80", "process_in_blocks": "0"}
+[0m21:41:16.231916 [debug] [MainThread]: Command `dbt init` succeeded at 21:41:16.231749 after 211.09 seconds
+[0m21:41:16.232455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8e89d2e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8cfb4d040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8dadfc380>]}
+[0m21:41:16.233027 [debug] [MainThread]: Flushing usage events
+[0m22:20:53.386383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3ad4b9d1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3ad4aaa6c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3ad4aaa990>]}
+
+
+============================== 22:20:53.390109 | 1f8f100a-0734-4540-8afc-004228559f25 ==============================
+[0m22:20:53.390109 [info ] [MainThread]: Running with dbt=1.8.4
+[0m22:20:53.390843 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/srpantano/dbt-bigquery', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:20:53.402144 [info ] [MainThread]: dbt version: 1.8.4
+[0m22:20:53.402838 [info ] [MainThread]: python version: 3.12.4
+[0m22:20:53.403389 [info ] [MainThread]: python path: /home/srpantano/anaconda3/envs/dbt-bq/bin/python
+[0m22:20:53.403966 [info ] [MainThread]: os info: Linux-6.5.0-44-generic-x86_64-with-glibc2.35
+[0m22:20:54.429733 [info ] [MainThread]: Using profiles dir at /home/srpantano/dbt-bigquery
+[0m22:20:54.430553 [info ] [MainThread]: Using profiles.yml file at /home/srpantano/dbt-bigquery/profiles.yml
+[0m22:20:54.431168 [info ] [MainThread]: Using dbt_project.yml file at /home/srpantano/dbt-bigquery/dbt_project.yml
+[0m22:20:54.431792 [info ] [MainThread]: adapter type: bigquery
+[0m22:20:54.432407 [info ] [MainThread]: adapter version: 1.8.2
+[0m22:20:54.433359 [info ] [MainThread]: Configuration:
+[0m22:20:54.434055 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:20:54.434658 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:20:54.435204 [info ] [MainThread]: Required dependencies:
+[0m22:20:54.435736 [debug] [MainThread]: Executing "git --help"
+[0m22:20:54.438303 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:20:54.439034 [debug] [MainThread]: STDERR: "b''"
+[0m22:20:54.439593 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:20:54.440423 [info ] [MainThread]: Connection:
+[0m22:20:54.441431 [info ] [MainThread]:   method: service-account
+[0m22:20:54.442240 [info ] [MainThread]:   database: dbt-101-430700
+[0m22:20:54.442796 [info ] [MainThread]:   execution_project: dbt-101-430700
+[0m22:20:54.443319 [info ] [MainThread]:   schema: dbt_bigquery_dev
+[0m22:20:54.443925 [info ] [MainThread]:   location: US
+[0m22:20:54.444588 [info ] [MainThread]:   priority: interactive
+[0m22:20:54.445156 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:20:54.445650 [info ] [MainThread]:   impersonate_service_account: None
+[0m22:20:54.446146 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:20:54.446643 [info ] [MainThread]:   job_retries: 1
+[0m22:20:54.447083 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:20:54.447579 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m22:20:54.448070 [info ] [MainThread]:   timeout_seconds: 300
+[0m22:20:54.448524 [info ] [MainThread]:   client_id: None
+[0m22:20:54.448948 [info ] [MainThread]:   token_uri: None
+[0m22:20:54.449357 [info ] [MainThread]:   dataproc_region: None
+[0m22:20:54.449765 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m22:20:54.450172 [info ] [MainThread]:   gcs_bucket: None
+[0m22:20:54.450632 [info ] [MainThread]:   dataproc_batch: None
+[0m22:20:54.451405 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m22:20:54.453557 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:20:54.454170 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:20:54.456670 [debug] [MainThread]: On debug: select 1 as id
+[0m22:20:56.394216 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:9a551748-6ab6-46fd-b727-47ecb4ea35ef&page=queryresults
+[0m22:20:57.214085 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:20:57.214878 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:20:57.215654 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/srpantano/dbt-bigquery/dbt_project.yml> not found
+
+[0m22:20:57.217106 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 3.902002, "process_user_time": 2.90325, "process_kernel_time": 0.340626, "process_mem_max_rss": "198176", "process_out_blocks": "32", "command_success": false, "process_in_blocks": "0"}
+[0m22:20:57.218066 [debug] [MainThread]: Command `dbt debug` failed at 22:20:57.217865 after 3.90 seconds
+[0m22:20:57.218670 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:20:57.219272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3ac840e810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3ad512eb70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3ad54fb680>]}
+[0m22:20:57.219982 [debug] [MainThread]: Flushing usage events
+[0m12:29:37.155269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b719fbe60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b72af9610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b710ccc20>]}
+
+
+============================== 12:29:37.160370 | 42365feb-090b-426b-826f-f8708afa7de7 ==============================
+[0m12:29:37.160370 [info ] [MainThread]: Running with dbt=1.8.4
+[0m12:29:37.161210 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/srpantano/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:29:37.178722 [info ] [MainThread]: dbt version: 1.8.4
+[0m12:29:37.179328 [info ] [MainThread]: python version: 3.12.4
+[0m12:29:37.179825 [info ] [MainThread]: python path: /home/srpantano/anaconda3/envs/dbt-bq/bin/python
+[0m12:29:37.180319 [info ] [MainThread]: os info: Linux-6.5.0-45-generic-x86_64-with-glibc2.35
+[0m12:29:38.666775 [info ] [MainThread]: Using profiles dir at /home/srpantano/.dbt
+[0m12:29:38.667474 [info ] [MainThread]: Using profiles.yml file at /home/srpantano/.dbt/profiles.yml
+[0m12:29:38.668094 [info ] [MainThread]: Using dbt_project.yml file at /home/srpantano/dbt-bigquery/dbt_project.yml
+[0m12:29:38.668646 [info ] [MainThread]: adapter type: bigquery
+[0m12:29:38.669171 [info ] [MainThread]: adapter version: 1.8.2
+[0m12:29:38.669702 [info ] [MainThread]: Configuration:
+[0m12:29:38.670165 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:29:38.670607 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:29:38.671046 [info ] [MainThread]: Required dependencies:
+[0m12:29:38.671513 [debug] [MainThread]: Executing "git --help"
+[0m12:29:38.675011 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:29:38.675744 [debug] [MainThread]: STDERR: "b''"
+[0m12:29:38.676240 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:29:38.676728 [info ] [MainThread]: Connection:
+[0m12:29:38.677313 [info ] [MainThread]:   method: service-account
+[0m12:29:38.677804 [info ] [MainThread]:   database: dbt_101
+[0m12:29:38.678233 [info ] [MainThread]:   execution_project: dbt_101
+[0m12:29:38.678653 [info ] [MainThread]:   schema: bq_dbt
+[0m12:29:38.679068 [info ] [MainThread]:   location: US
+[0m12:29:38.679486 [info ] [MainThread]:   priority: interactive
+[0m12:29:38.679927 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m12:29:38.680355 [info ] [MainThread]:   impersonate_service_account: None
+[0m12:29:38.680776 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m12:29:38.681246 [info ] [MainThread]:   job_retries: 1
+[0m12:29:38.681793 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m12:29:38.682250 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m12:29:38.682776 [info ] [MainThread]:   timeout_seconds: 300
+[0m12:29:38.683335 [info ] [MainThread]:   client_id: None
+[0m12:29:38.683940 [info ] [MainThread]:   token_uri: None
+[0m12:29:38.684426 [info ] [MainThread]:   dataproc_region: None
+[0m12:29:38.684853 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m12:29:38.685284 [info ] [MainThread]:   gcs_bucket: None
+[0m12:29:38.685698 [info ] [MainThread]:   dataproc_batch: None
+[0m12:29:38.686348 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m12:29:38.689206 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m12:29:38.689813 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:29:38.690447 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: '/home/srpantano/dbt-bigquery/dbt_bigquery/dbt-bigquery.json''
+[0m12:29:38.691044 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:29:38.691725 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m12:29:38.692277 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/srpantano/dbt-bigquery/dbt_project.yml> not found
+
+[0m12:29:38.692843 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  [Errno 2] No such file or directory: '/home/srpantano/dbt-bigquery/dbt_bigquery/dbt-bigquery.json'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:29:38.694730 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.5971041, "process_user_time": 2.581152, "process_kernel_time": 0.432839, "process_mem_max_rss": "195324", "process_in_blocks": "276032", "process_out_blocks": "32", "command_success": false}
+[0m12:29:38.695562 [debug] [MainThread]: Command `dbt debug` failed at 12:29:38.695393 after 1.60 seconds
+[0m12:29:38.696098 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:29:38.696624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b71200680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b5e884620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b5c5eaba0>]}
+[0m12:29:38.697295 [debug] [MainThread]: Flushing usage events
