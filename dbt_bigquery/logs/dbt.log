@@ -1173,3 +1173,1145 @@ where id = 1;
 [0m19:41:20.041838 [debug] [MainThread]: Command `dbt run` succeeded at 19:41:20.041686 after 8.58 seconds
 [0m19:41:20.042410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71ec6fa388f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71ec6fd489b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71ec6f87e690>]}
 [0m19:41:20.043003 [debug] [MainThread]: Flushing usage events
+[0m20:37:51.048670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79541f5a64e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x795420539820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79541f4edc70>]}
+
+
+============================== 20:37:51.052400 | 2e1cb06e-d22d-4074-a46c-94e24425d462 ==============================
+[0m20:37:51.052400 [info ] [MainThread]: Running with dbt=1.8.4
+[0m20:37:51.053232 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/srpantano/dbt-bigquery/dbt_bigquery', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/srpantano/dbt-bigquery/dbt_bigquery/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:37:52.051019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2e1cb06e-d22d-4074-a46c-94e24425d462', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79542039c9e0>]}
+[0m20:37:52.119166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2e1cb06e-d22d-4074-a46c-94e24425d462', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7954216c2060>]}
+[0m20:37:52.120103 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m20:37:52.132589 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m20:37:52.250170 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m20:37:52.250893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2e1cb06e-d22d-4074-a46c-94e24425d462', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79540654e000>]}
+[0m20:37:53.807306 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_bigquery.example
+[0m20:37:53.814038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2e1cb06e-d22d-4074-a46c-94e24425d462', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x795406764f20>]}
+[0m20:37:53.913049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2e1cb06e-d22d-4074-a46c-94e24425d462', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79540678a150>]}
+[0m20:37:53.913739 [info ] [MainThread]: Found 3 models, 4 data tests, 471 macros
+[0m20:37:53.914278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2e1cb06e-d22d-4074-a46c-94e24425d462', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79541ff44260>]}
+[0m20:37:53.916677 [info ] [MainThread]: 
+[0m20:37:53.917531 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:37:53.923093 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-101-430700'
+[0m20:37:53.923788 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:37:54.721483 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt-101-430700, now list_dbt-101-430700_db_dbt_bigquery)
+[0m20:37:54.722108 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:37:55.431610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2e1cb06e-d22d-4074-a46c-94e24425d462', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7954064d03e0>]}
+[0m20:37:55.432496 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:37:55.433045 [info ] [MainThread]: 
+[0m20:37:55.436211 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.customer
+[0m20:37:55.437011 [info ] [Thread-1 (]: 1 of 3 START sql table model db_dbt_bigquery.customer .......................... [RUN]
+[0m20:37:55.437687 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt-101-430700_db_dbt_bigquery, now model.dbt_bigquery_prj.customer)
+[0m20:37:55.438259 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.customer
+[0m20:37:55.446707 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.customer"
+[0m20:37:55.447569 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.customer
+[0m20:37:55.498919 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.customer"
+[0m20:37:55.499891 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:37:55.501999 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.customer: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.customer"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`customer`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with customers as (
+    select id,
+           first_name,
+           last_name
+    from `dbt-tutorial`.jaffle_shop.customers
+),
+
+orders as (
+     select id,
+            user_id,
+            order_date,
+            status
+    from `dbt-tutorial`.jaffle_shop.orders   
+),
+
+customers_orders as (
+     select user_id,
+            min(order_date) as first_order,
+            max(order_date) as most_recent_order,
+            count(id) as numbers_of_orders
+    from orders
+    group by user_id
+),
+
+final as (
+    select
+        customers.id,
+        customers.first_name,
+        customers.last_name,
+        customers_orders.first_order,
+        customers_orders.numbers_of_orders
+    from customers
+    left join customers_orders
+    on customers.id = customers_orders.user_id
+)
+    );
+  
+[0m20:37:56.455058 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:a2b2ffa6-dfdc-4bb3-b414-2b284d4083ee&page=queryresults
+[0m20:37:56.455977 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected ")" at [48:5]; reason: invalidQuery, location: query, message: Syntax error: Unexpected ")" at [48:5]')
+[0m20:37:56.966789 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:f7c1cf8c-4e8c-4f0f-937c-ec88d9da65aa&page=queryresults
+[0m20:37:56.967662 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:f7c1cf8c-4e8c-4f0f-937c-ec88d9da65aa&page=queryresults
+[0m20:37:56.991226 [debug] [Thread-1 (]: Database Error in model customer (models/customer.sql)
+  Syntax error: Unexpected ")" at [48:5]
+  compiled Code at target/run/dbt_bigquery_prj/models/customer.sql
+[0m20:37:56.993202 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e1cb06e-d22d-4074-a46c-94e24425d462', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7954064c57f0>]}
+[0m20:37:56.994138 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model db_dbt_bigquery.customer ................. [[31mERROR[0m in 1.55s]
+[0m20:37:56.995088 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.customer
+[0m20:37:56.995732 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:37:56.997373 [info ] [Thread-1 (]: 2 of 3 START sql table model db_dbt_bigquery.my_first_dbt_model ................ [RUN]
+[0m20:37:56.998097 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_bigquery_prj.customer, now model.dbt_bigquery_prj.my_first_dbt_model)
+[0m20:37:56.998665 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:37:57.002974 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.my_first_dbt_model"
+[0m20:37:57.003918 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:37:57.006602 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:37:57.671786 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.my_first_dbt_model"
+[0m20:37:57.672832 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m20:37:58.297562 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:f1075c91-cd5f-4731-ba4f-39abebdaef69&page=queryresults
+[0m20:38:00.882482 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e1cb06e-d22d-4074-a46c-94e24425d462', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x795406cf7140>]}
+[0m20:38:00.883542 [info ] [Thread-1 (]: 2 of 3 OK created sql table model db_dbt_bigquery.my_first_dbt_model ........... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.88s]
+[0m20:38:00.884534 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:38:00.885795 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:38:00.886542 [info ] [Thread-1 (]: 3 of 3 START sql table model db_dbt_bigquery.my_second_dbt_model ............... [RUN]
+[0m20:38:00.887244 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_bigquery_prj.my_first_dbt_model, now model.dbt_bigquery_prj.my_second_dbt_model)
+[0m20:38:00.887771 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:38:00.891508 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.my_second_dbt_model"
+[0m20:38:00.892398 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:38:00.898105 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:38:01.986358 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.my_second_dbt_model"
+[0m20:38:01.987435 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.my_second_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`my_second_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- Use the `ref` function to select from other models
+
+select *
+from `dbt-101-430700`.`db_dbt_bigquery`.`my_first_dbt_model`
+where id = 1
+    );
+  
+[0m20:38:02.615999 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:8be2032c-4de1-4fd2-8db2-04b480c93fcd&page=queryresults
+[0m20:38:05.262938 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e1cb06e-d22d-4074-a46c-94e24425d462', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x795405c59df0>]}
+[0m20:38:05.263912 [info ] [Thread-1 (]: 3 of 3 OK created sql table model db_dbt_bigquery.my_second_dbt_model .......... [[32mCREATE TABLE (1.0 rows, 8.0 Bytes processed)[0m in 4.38s]
+[0m20:38:05.264884 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:38:05.266544 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:38:05.267037 [debug] [MainThread]: Connection 'model.dbt_bigquery_prj.my_second_dbt_model' was properly closed.
+[0m20:38:05.267573 [info ] [MainThread]: 
+[0m20:38:05.268083 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 11.35 seconds (11.35s).
+[0m20:38:05.269498 [debug] [MainThread]: Command end result
+[0m20:38:05.300624 [info ] [MainThread]: 
+[0m20:38:05.301308 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m20:38:05.301811 [info ] [MainThread]: 
+[0m20:38:05.302402 [error] [MainThread]:   Database Error in model customer (models/customer.sql)
+  Syntax error: Unexpected ")" at [48:5]
+  compiled Code at target/run/dbt_bigquery_prj/models/customer.sql
+[0m20:38:05.302933 [info ] [MainThread]: 
+[0m20:38:05.303436 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m20:38:05.304647 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 14.313533, "process_user_time": 4.809683, "process_kernel_time": 0.407734, "process_mem_max_rss": "207816", "process_in_blocks": "752", "process_out_blocks": "2976", "command_success": false}
+[0m20:38:05.305473 [debug] [MainThread]: Command `dbt run` failed at 20:38:05.305311 after 14.31 seconds
+[0m20:38:05.306044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x795420048bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79541f7937a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x795405d39af0>]}
+[0m20:38:05.306652 [debug] [MainThread]: Flushing usage events
+[0m20:38:50.535303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833cb446cc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833cb319bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833cb8c0bc0>]}
+
+
+============================== 20:38:50.539087 | dfac2f7e-06ee-4759-9f75-e9b2cfe2d35c ==============================
+[0m20:38:50.539087 [info ] [MainThread]: Running with dbt=1.8.4
+[0m20:38:50.539964 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/srpantano/dbt-bigquery/dbt_bigquery', 'log_path': '/home/srpantano/dbt-bigquery/dbt_bigquery/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:38:51.531370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dfac2f7e-06ee-4759-9f75-e9b2cfe2d35c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833b2e8ae70>]}
+[0m20:38:51.599845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dfac2f7e-06ee-4759-9f75-e9b2cfe2d35c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833cb7934a0>]}
+[0m20:38:51.600762 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m20:38:51.613249 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m20:38:51.750267 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+[0m20:38:51.751124 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery_prj://models/customers.sql
+[0m20:38:51.751582 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery_prj://models/customer.sql
+[0m20:38:52.032071 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_bigquery.example
+[0m20:38:52.038708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dfac2f7e-06ee-4759-9f75-e9b2cfe2d35c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833b22e4c50>]}
+[0m20:38:52.137109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dfac2f7e-06ee-4759-9f75-e9b2cfe2d35c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833b1853ad0>]}
+[0m20:38:52.137788 [info ] [MainThread]: Found 3 models, 4 data tests, 471 macros
+[0m20:38:52.138320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dfac2f7e-06ee-4759-9f75-e9b2cfe2d35c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833b1f0b7a0>]}
+[0m20:38:52.140770 [info ] [MainThread]: 
+[0m20:38:52.141604 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:38:52.146982 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-101-430700'
+[0m20:38:52.147783 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:38:52.881690 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt-101-430700, now list_dbt-101-430700_db_dbt_bigquery)
+[0m20:38:52.882326 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:38:53.575516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dfac2f7e-06ee-4759-9f75-e9b2cfe2d35c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833cc53c410>]}
+[0m20:38:53.576372 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:38:53.576914 [info ] [MainThread]: 
+[0m20:38:53.580186 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.customers
+[0m20:38:53.581025 [info ] [Thread-1 (]: 1 of 3 START sql table model db_dbt_bigquery.customers ......................... [RUN]
+[0m20:38:53.581703 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt-101-430700_db_dbt_bigquery, now model.dbt_bigquery_prj.customers)
+[0m20:38:53.582251 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.customers
+[0m20:38:53.590571 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.customers"
+[0m20:38:53.591456 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.customers
+[0m20:38:53.641061 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.customers"
+[0m20:38:53.642020 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:38:53.643964 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.customers: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.customers"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with customers as (
+    select id,
+           first_name,
+           last_name
+    from `dbt-tutorial`.jaffle_shop.customers
+),
+
+orders as (
+     select id,
+            user_id,
+            order_date,
+            status
+    from `dbt-tutorial`.jaffle_shop.orders   
+),
+
+customers_orders as (
+     select user_id,
+            min(order_date) as first_order,
+            max(order_date) as most_recent_order,
+            count(id) as numbers_of_orders
+    from orders
+    group by user_id
+),
+
+final as (
+    select
+        customers.id,
+        customers.first_name,
+        customers.last_name,
+        customers_orders.first_order,
+        customers_orders.numbers_of_orders
+    from customers
+    left join customers_orders
+    on customers.id = customers_orders.user_id
+)
+    );
+  
+[0m20:38:54.416737 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:aa67ea8b-b5c3-4959-93ce-2f9342fa67c2&page=queryresults
+[0m20:38:54.417690 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected ")" at [48:5]; reason: invalidQuery, location: query, message: Syntax error: Unexpected ")" at [48:5]')
+[0m20:38:55.234965 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:a57b884f-c3ff-4b53-bcd7-e728e64bfcb3&page=queryresults
+[0m20:38:55.235864 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:a57b884f-c3ff-4b53-bcd7-e728e64bfcb3&page=queryresults
+[0m20:38:55.242067 [debug] [Thread-1 (]: Database Error in model customers (models/customers.sql)
+  Syntax error: Unexpected ")" at [48:5]
+  compiled Code at target/run/dbt_bigquery_prj/models/customers.sql
+[0m20:38:55.244196 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dfac2f7e-06ee-4759-9f75-e9b2cfe2d35c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833b2223680>]}
+[0m20:38:55.245206 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model db_dbt_bigquery.customers ................ [[31mERROR[0m in 1.66s]
+[0m20:38:55.246136 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.customers
+[0m20:38:55.246833 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:38:55.248389 [info ] [Thread-1 (]: 2 of 3 START sql table model db_dbt_bigquery.my_first_dbt_model ................ [RUN]
+[0m20:38:55.249099 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_bigquery_prj.customers, now model.dbt_bigquery_prj.my_first_dbt_model)
+[0m20:38:55.249643 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:38:55.253204 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.my_first_dbt_model"
+[0m20:38:55.254123 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:38:55.256768 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:38:56.055922 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.my_first_dbt_model"
+[0m20:38:56.056975 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m20:38:56.673719 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:26372b77-a313-4892-8bb9-d886ff641d85&page=queryresults
+[0m20:38:59.148192 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dfac2f7e-06ee-4759-9f75-e9b2cfe2d35c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833b2802d20>]}
+[0m20:38:59.149230 [info ] [Thread-1 (]: 2 of 3 OK created sql table model db_dbt_bigquery.my_first_dbt_model ........... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.90s]
+[0m20:38:59.150204 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:38:59.151523 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:38:59.152275 [info ] [Thread-1 (]: 3 of 3 START sql table model db_dbt_bigquery.my_second_dbt_model ............... [RUN]
+[0m20:38:59.153116 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_bigquery_prj.my_first_dbt_model, now model.dbt_bigquery_prj.my_second_dbt_model)
+[0m20:38:59.153683 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:38:59.157381 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.my_second_dbt_model"
+[0m20:38:59.158331 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:38:59.164354 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:38:59.952151 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.my_second_dbt_model"
+[0m20:38:59.953177 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.my_second_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`my_second_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- Use the `ref` function to select from other models
+
+select *
+from `dbt-101-430700`.`db_dbt_bigquery`.`my_first_dbt_model`
+where id = 1
+    );
+  
+[0m20:39:00.458256 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:a8dc4326-8c9a-4bec-9e8d-94b46ebfab27&page=queryresults
+[0m20:39:02.939756 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dfac2f7e-06ee-4759-9f75-e9b2cfe2d35c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833b062d130>]}
+[0m20:39:02.940709 [info ] [Thread-1 (]: 3 of 3 OK created sql table model db_dbt_bigquery.my_second_dbt_model .......... [[32mCREATE TABLE (1.0 rows, 8.0 Bytes processed)[0m in 3.79s]
+[0m20:39:02.941666 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:39:02.943462 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:39:02.943935 [debug] [MainThread]: Connection 'model.dbt_bigquery_prj.my_second_dbt_model' was properly closed.
+[0m20:39:02.944453 [info ] [MainThread]: 
+[0m20:39:02.944953 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 10.80 seconds (10.80s).
+[0m20:39:02.946320 [debug] [MainThread]: Command end result
+[0m20:39:02.977519 [info ] [MainThread]: 
+[0m20:39:02.978183 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m20:39:02.978742 [info ] [MainThread]: 
+[0m20:39:02.979356 [error] [MainThread]:   Database Error in model customers (models/customers.sql)
+  Syntax error: Unexpected ")" at [48:5]
+  compiled Code at target/run/dbt_bigquery_prj/models/customers.sql
+[0m20:39:02.979832 [info ] [MainThread]: 
+[0m20:39:02.980331 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m20:39:02.981510 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 12.505661, "process_user_time": 3.776401, "process_kernel_time": 0.484447, "process_mem_max_rss": "207296", "process_out_blocks": "2976", "command_success": false, "process_in_blocks": "0"}
+[0m20:39:02.982259 [debug] [MainThread]: Command `dbt run` failed at 20:39:02.982116 after 12.51 seconds
+[0m20:39:02.982806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833cb388bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833b1faeb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7833cb962f90>]}
+[0m20:39:02.983394 [debug] [MainThread]: Flushing usage events
+[0m20:42:33.877177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7152521a0320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71525332dd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715252646480>]}
+
+
+============================== 20:42:33.880897 | f32285d0-ae4e-4da9-9f06-52bf095c1827 ==============================
+[0m20:42:33.880897 [info ] [MainThread]: Running with dbt=1.8.4
+[0m20:42:33.881740 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/srpantano/dbt-bigquery/dbt_bigquery', 'log_path': '/home/srpantano/dbt-bigquery/dbt_bigquery/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:42:34.876424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f32285d0-ae4e-4da9-9f06-52bf095c1827', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71523cedea20>]}
+[0m20:42:34.945205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f32285d0-ae4e-4da9-9f06-52bf095c1827', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71523d34e4b0>]}
+[0m20:42:34.946124 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m20:42:34.958558 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m20:42:35.086987 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m20:42:35.087899 [debug] [MainThread]: Partial parsing: updated file: dbt_bigquery_prj://models/customers.sql
+[0m20:42:35.376551 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_bigquery.example
+[0m20:42:35.383145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f32285d0-ae4e-4da9-9f06-52bf095c1827', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715237975fd0>]}
+[0m20:42:35.482887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f32285d0-ae4e-4da9-9f06-52bf095c1827', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71523794f800>]}
+[0m20:42:35.483593 [info ] [MainThread]: Found 3 models, 4 data tests, 471 macros
+[0m20:42:35.484123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f32285d0-ae4e-4da9-9f06-52bf095c1827', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71523c0b4fb0>]}
+[0m20:42:35.486562 [info ] [MainThread]: 
+[0m20:42:35.487414 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:42:35.492792 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-101-430700'
+[0m20:42:35.493529 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:42:36.524886 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt-101-430700, now list_dbt-101-430700_db_dbt_bigquery)
+[0m20:42:36.525593 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:42:37.241515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f32285d0-ae4e-4da9-9f06-52bf095c1827', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715252644200>]}
+[0m20:42:37.242349 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:42:37.242928 [info ] [MainThread]: 
+[0m20:42:37.246091 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.customers
+[0m20:42:37.246963 [info ] [Thread-1 (]: 1 of 3 START sql table model db_dbt_bigquery.customers ......................... [RUN]
+[0m20:42:37.247676 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt-101-430700_db_dbt_bigquery, now model.dbt_bigquery_prj.customers)
+[0m20:42:37.248220 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.customers
+[0m20:42:37.256506 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.customers"
+[0m20:42:37.257441 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.customers
+[0m20:42:37.307272 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.customers"
+[0m20:42:37.308332 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:42:37.310305 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.customers: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.customers"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with customers as (
+    select id,
+           first_name,
+           last_name
+    from `dbt-tutorial`.jaffle_shop.customers
+),
+
+orders as (
+     select id,
+            user_id,
+            order_date,
+            status
+    from `dbt-tutorial`.jaffle_shop.orders   
+),
+
+customers_orders as (
+     select user_id,
+            min(order_date) as first_order,
+            max(order_date) as most_recent_order,
+            count(id) as numbers_of_orders
+    from orders
+    group by user_id
+),
+
+final as (
+    select
+        customers.id,
+        customers.first_name,
+        customers.last_name,
+        customers_orders.first_order,
+        customers_orders.most_recent_order,
+        customers_orders.numbers_of_orders
+    from customers
+    left join customers_orders
+    on customers.id = customers_orders.user_id
+)
+
+select * from final
+    );
+  
+[0m20:42:38.469143 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:584401fa-8641-4eac-89a1-1ac209f04112&page=queryresults
+[0m20:42:41.151401 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f32285d0-ae4e-4da9-9f06-52bf095c1827', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71523c9734a0>]}
+[0m20:42:41.152462 [info ] [Thread-1 (]: 1 of 3 OK created sql table model db_dbt_bigquery.customers .................... [[32mCREATE TABLE (100.0 rows, 4.3 KiB processed)[0m in 3.90s]
+[0m20:42:41.153482 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.customers
+[0m20:42:41.154132 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:42:41.154832 [info ] [Thread-1 (]: 2 of 3 START sql table model db_dbt_bigquery.my_first_dbt_model ................ [RUN]
+[0m20:42:41.155565 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_bigquery_prj.customers, now model.dbt_bigquery_prj.my_first_dbt_model)
+[0m20:42:41.156248 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:42:41.159677 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.my_first_dbt_model"
+[0m20:42:41.160681 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:42:41.163339 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:42:41.825815 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.my_first_dbt_model"
+[0m20:42:41.826882 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m20:42:42.360382 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:babe713c-4b4e-4c3e-b67d-73cfdd411230&page=queryresults
+[0m20:42:44.719892 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f32285d0-ae4e-4da9-9f06-52bf095c1827', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715235867f50>]}
+[0m20:42:44.720870 [info ] [Thread-1 (]: 2 of 3 OK created sql table model db_dbt_bigquery.my_first_dbt_model ........... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.56s]
+[0m20:42:44.721879 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:42:44.723208 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:42:44.724111 [info ] [Thread-1 (]: 3 of 3 START sql table model db_dbt_bigquery.my_second_dbt_model ............... [RUN]
+[0m20:42:44.724839 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_bigquery_prj.my_first_dbt_model, now model.dbt_bigquery_prj.my_second_dbt_model)
+[0m20:42:44.725376 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:42:44.728970 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.my_second_dbt_model"
+[0m20:42:44.729856 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:42:44.732232 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:42:45.396399 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.my_second_dbt_model"
+[0m20:42:45.397406 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.my_second_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`my_second_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- Use the `ref` function to select from other models
+
+select *
+from `dbt-101-430700`.`db_dbt_bigquery`.`my_first_dbt_model`
+where id = 1
+    );
+  
+[0m20:42:46.047397 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:48e46863-8c2f-47ee-baad-1e473db4696e&page=queryresults
+[0m20:42:48.512452 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f32285d0-ae4e-4da9-9f06-52bf095c1827', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715235872d80>]}
+[0m20:42:48.513405 [info ] [Thread-1 (]: 3 of 3 OK created sql table model db_dbt_bigquery.my_second_dbt_model .......... [[32mCREATE TABLE (1.0 rows, 8.0 Bytes processed)[0m in 3.79s]
+[0m20:42:48.514416 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:42:48.516109 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:42:48.516591 [debug] [MainThread]: Connection 'model.dbt_bigquery_prj.my_second_dbt_model' was properly closed.
+[0m20:42:48.517139 [info ] [MainThread]: 
+[0m20:42:48.517650 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 13.03 seconds (13.03s).
+[0m20:42:48.519096 [debug] [MainThread]: Command end result
+[0m20:42:48.550621 [info ] [MainThread]: 
+[0m20:42:48.551346 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:42:48.551896 [info ] [MainThread]: 
+[0m20:42:48.552410 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m20:42:48.553778 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 14.734243, "process_user_time": 3.594403, "process_kernel_time": 0.34119, "process_mem_max_rss": "206440", "process_out_blocks": "2960", "process_in_blocks": "0"}
+[0m20:42:48.554628 [debug] [MainThread]: Command `dbt run` succeeded at 20:42:48.554477 after 14.74 seconds
+[0m20:42:48.555148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715252782d20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71523c075220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715254f43260>]}
+[0m20:42:48.555651 [debug] [MainThread]: Flushing usage events
+[0m20:48:18.773400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287ae9eaae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287aed0e480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287aea75be0>]}
+
+
+============================== 20:48:18.777153 | 7807e3c1-a13b-4a63-bd5c-bfeace038383 ==============================
+[0m20:48:18.777153 [info ] [MainThread]: Running with dbt=1.8.4
+[0m20:48:18.777982 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/srpantano/dbt-bigquery/dbt_bigquery/logs', 'profiles_dir': '/home/srpantano/dbt-bigquery/dbt_bigquery', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:48:19.771106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7807e3c1-a13b-4a63-bd5c-bfeace038383', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287b00bce30>]}
+[0m20:48:19.838934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7807e3c1-a13b-4a63-bd5c-bfeace038383', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287aee4c980>]}
+[0m20:48:19.839850 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m20:48:19.852389 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m20:48:19.971560 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m20:48:19.972249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7807e3c1-a13b-4a63-bd5c-bfeace038383', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287af32db80>]}
+[0m20:48:21.523288 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_bigquery.example
+[0m20:48:21.530018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7807e3c1-a13b-4a63-bd5c-bfeace038383', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287ae794b90>]}
+[0m20:48:21.629552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7807e3c1-a13b-4a63-bd5c-bfeace038383', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x728795de18b0>]}
+[0m20:48:21.630284 [info ] [MainThread]: Found 3 models, 4 data tests, 471 macros
+[0m20:48:21.630847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7807e3c1-a13b-4a63-bd5c-bfeace038383', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287ae794ad0>]}
+[0m20:48:21.633281 [info ] [MainThread]: 
+[0m20:48:21.634127 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:48:21.639585 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-101-430700'
+[0m20:48:21.640245 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:48:22.547786 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt-101-430700, now list_dbt-101-430700_db_dbt_bigquery)
+[0m20:48:22.548604 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:48:23.263775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7807e3c1-a13b-4a63-bd5c-bfeace038383', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287aff20260>]}
+[0m20:48:23.264796 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:48:23.265351 [info ] [MainThread]: 
+[0m20:48:23.268503 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.customers
+[0m20:48:23.269312 [info ] [Thread-1 (]: 1 of 3 START sql view model db_dbt_bigquery.customers .......................... [RUN]
+[0m20:48:23.270054 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt-101-430700_db_dbt_bigquery, now model.dbt_bigquery_prj.customers)
+[0m20:48:23.270647 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.customers
+[0m20:48:23.278998 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.customers"
+[0m20:48:23.279945 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.customers
+[0m20:48:23.309520 [debug] [Thread-1 (]: Compilation Error in model customers (models/customers.sql)
+  Trying to create view `dbt-101-430700`.`db_dbt_bigquery`.`customers`, but it currently exists as a table. Either drop `dbt-101-430700`.`db_dbt_bigquery`.`customers` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros/materializations/view.sql)
+  > called by macro handle_existing_table (macros/relations/view/replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros/relations/view/replace.sql)
+  > called by macro materialization_view_bigquery (macros/materializations/view.sql)
+  > called by model customers (models/customers.sql)
+[0m20:48:23.311550 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7807e3c1-a13b-4a63-bd5c-bfeace038383', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287af32eed0>]}
+[0m20:48:23.312481 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model db_dbt_bigquery.customers ................. [[31mERROR[0m in 0.04s]
+[0m20:48:23.313456 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.customers
+[0m20:48:23.314101 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:48:23.315824 [info ] [Thread-1 (]: 2 of 3 START sql table model db_dbt_bigquery.my_first_dbt_model ................ [RUN]
+[0m20:48:23.316541 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_bigquery_prj.customers, now model.dbt_bigquery_prj.my_first_dbt_model)
+[0m20:48:23.317087 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:48:23.320684 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.my_first_dbt_model"
+[0m20:48:23.321672 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:48:23.335087 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:48:24.113142 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.my_first_dbt_model"
+[0m20:48:24.114260 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m20:48:24.696986 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:140179fc-289e-452e-b203-e684ffdd7f0c&page=queryresults
+[0m20:48:27.370657 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7807e3c1-a13b-4a63-bd5c-bfeace038383', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287963eed80>]}
+[0m20:48:27.371700 [info ] [Thread-1 (]: 2 of 3 OK created sql table model db_dbt_bigquery.my_first_dbt_model ........... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 4.05s]
+[0m20:48:27.372694 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:48:27.374100 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:48:27.374869 [info ] [Thread-1 (]: 3 of 3 START sql view model db_dbt_bigquery.my_second_dbt_model ................ [RUN]
+[0m20:48:27.375529 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_bigquery_prj.my_first_dbt_model, now model.dbt_bigquery_prj.my_second_dbt_model)
+[0m20:48:27.376064 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:48:27.379652 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.my_second_dbt_model"
+[0m20:48:27.380572 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:48:27.388960 [debug] [Thread-1 (]: Compilation Error in model my_second_dbt_model (models/example/my_second_dbt_model.sql)
+  Trying to create view `dbt-101-430700`.`db_dbt_bigquery`.`my_second_dbt_model`, but it currently exists as a table. Either drop `dbt-101-430700`.`db_dbt_bigquery`.`my_second_dbt_model` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros/materializations/view.sql)
+  > called by macro handle_existing_table (macros/relations/view/replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros/relations/view/replace.sql)
+  > called by macro materialization_view_bigquery (macros/materializations/view.sql)
+  > called by model my_second_dbt_model (models/example/my_second_dbt_model.sql)
+[0m20:48:27.389732 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7807e3c1-a13b-4a63-bd5c-bfeace038383', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287941ca060>]}
+[0m20:48:27.390597 [error] [Thread-1 (]: 3 of 3 ERROR creating sql view model db_dbt_bigquery.my_second_dbt_model ....... [[31mERROR[0m in 0.01s]
+[0m20:48:27.391561 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:48:27.393391 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:48:27.393887 [debug] [MainThread]: Connection 'model.dbt_bigquery_prj.my_second_dbt_model' was properly closed.
+[0m20:48:27.394417 [info ] [MainThread]: 
+[0m20:48:27.394957 [info ] [MainThread]: Finished running 2 view models, 1 table model in 0 hours 0 minutes and 5.76 seconds (5.76s).
+[0m20:48:27.396430 [debug] [MainThread]: Command end result
+[0m20:48:27.427477 [info ] [MainThread]: 
+[0m20:48:27.428158 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m20:48:27.428647 [info ] [MainThread]: 
+[0m20:48:27.429284 [error] [MainThread]:   Compilation Error in model customers (models/customers.sql)
+  Trying to create view `dbt-101-430700`.`db_dbt_bigquery`.`customers`, but it currently exists as a table. Either drop `dbt-101-430700`.`db_dbt_bigquery`.`customers` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros/materializations/view.sql)
+  > called by macro handle_existing_table (macros/relations/view/replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros/relations/view/replace.sql)
+  > called by macro materialization_view_bigquery (macros/materializations/view.sql)
+  > called by model customers (models/customers.sql)
+[0m20:48:27.429796 [info ] [MainThread]: 
+[0m20:48:27.430396 [error] [MainThread]:   Compilation Error in model my_second_dbt_model (models/example/my_second_dbt_model.sql)
+  Trying to create view `dbt-101-430700`.`db_dbt_bigquery`.`my_second_dbt_model`, but it currently exists as a table. Either drop `dbt-101-430700`.`db_dbt_bigquery`.`my_second_dbt_model` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros/materializations/view.sql)
+  > called by macro handle_existing_table (macros/relations/view/replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros/relations/view/replace.sql)
+  > called by macro materialization_view_bigquery (macros/materializations/view.sql)
+  > called by model my_second_dbt_model (models/example/my_second_dbt_model.sql)
+[0m20:48:27.430954 [info ] [MainThread]: 
+[0m20:48:27.431468 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=2 SKIP=0 TOTAL=3
+[0m20:48:27.432675 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 8.717008, "process_user_time": 4.83372, "process_kernel_time": 0.269199, "process_mem_max_rss": "207616", "process_in_blocks": "16", "process_out_blocks": "2952", "command_success": false}
+[0m20:48:27.433528 [debug] [MainThread]: Command `dbt run` failed at 20:48:27.433359 after 8.72 seconds
+[0m20:48:27.434075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287af758bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287af187170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7287aeb60ef0>]}
+[0m20:48:27.434712 [debug] [MainThread]: Flushing usage events
+[0m20:48:43.546399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabc2543fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabc1232090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabc32fe000>]}
+
+
+============================== 20:48:43.550107 | 216e608f-8cec-478c-9745-fce81c54d98f ==============================
+[0m20:48:43.550107 [info ] [MainThread]: Running with dbt=1.8.4
+[0m20:48:43.551007 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/srpantano/dbt-bigquery/dbt_bigquery/logs', 'profiles_dir': '/home/srpantano/dbt-bigquery/dbt_bigquery', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --full-refresh', 'send_anonymous_usage_stats': 'True'}
+[0m20:48:44.547470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '216e608f-8cec-478c-9745-fce81c54d98f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabc1fb4a10>]}
+[0m20:48:44.615537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '216e608f-8cec-478c-9745-fce81c54d98f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabc105ca70>]}
+[0m20:48:44.616454 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m20:48:44.628716 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m20:48:44.768383 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:48:44.769074 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:48:44.776029 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_bigquery.example
+[0m20:48:44.816039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '216e608f-8cec-478c-9745-fce81c54d98f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabac6a4530>]}
+[0m20:48:44.917362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '216e608f-8cec-478c-9745-fce81c54d98f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabac316030>]}
+[0m20:48:44.918070 [info ] [MainThread]: Found 3 models, 4 data tests, 471 macros
+[0m20:48:44.918669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '216e608f-8cec-478c-9745-fce81c54d98f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabac3d4050>]}
+[0m20:48:44.921018 [info ] [MainThread]: 
+[0m20:48:44.921854 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:48:44.927266 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-101-430700'
+[0m20:48:44.927940 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:48:45.587701 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt-101-430700, now list_dbt-101-430700_db_dbt_bigquery)
+[0m20:48:45.588380 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:48:46.407724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '216e608f-8cec-478c-9745-fce81c54d98f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabac1e4e00>]}
+[0m20:48:46.408583 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:48:46.409133 [info ] [MainThread]: 
+[0m20:48:46.412135 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.customers
+[0m20:48:46.412916 [info ] [Thread-1 (]: 1 of 3 START sql view model db_dbt_bigquery.customers .......................... [RUN]
+[0m20:48:46.413579 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt-101-430700_db_dbt_bigquery, now model.dbt_bigquery_prj.customers)
+[0m20:48:46.414133 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.customers
+[0m20:48:46.425206 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.customers"
+[0m20:48:46.426160 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.customers
+[0m20:48:46.452906 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:48:47.142028 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.customers"
+[0m20:48:47.143238 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.customers: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.customers"} */
+
+
+  create or replace view `dbt-101-430700`.`db_dbt_bigquery`.`customers`
+  OPTIONS()
+  as with customers as (
+    select id,
+           first_name,
+           last_name
+    from `dbt-tutorial`.jaffle_shop.customers
+),
+
+orders as (
+     select id,
+            user_id,
+            order_date,
+            status
+    from `dbt-tutorial`.jaffle_shop.orders   
+),
+
+customers_orders as (
+     select user_id,
+            min(order_date) as first_order,
+            max(order_date) as most_recent_order,
+            count(id) as numbers_of_orders
+    from orders
+    group by user_id
+),
+
+final as (
+    select
+        customers.id,
+        customers.first_name,
+        customers.last_name,
+        customers_orders.first_order,
+        customers_orders.most_recent_order,
+        customers_orders.numbers_of_orders
+    from customers
+    left join customers_orders
+    on customers.id = customers_orders.user_id
+)
+
+select * from final;
+
+
+[0m20:48:47.736721 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:78490189-5fd4-4151-8346-f8a6bd714bef&page=queryresults
+[0m20:48:48.475392 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '216e608f-8cec-478c-9745-fce81c54d98f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabac900860>]}
+[0m20:48:48.476433 [info ] [Thread-1 (]: 1 of 3 OK created sql view model db_dbt_bigquery.customers ..................... [[32mCREATE VIEW (0 processed)[0m in 2.06s]
+[0m20:48:48.477433 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.customers
+[0m20:48:48.478078 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:48:48.478898 [info ] [Thread-1 (]: 2 of 3 START sql table model db_dbt_bigquery.my_first_dbt_model ................ [RUN]
+[0m20:48:48.479565 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_bigquery_prj.customers, now model.dbt_bigquery_prj.my_first_dbt_model)
+[0m20:48:48.480091 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:48:48.483509 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.my_first_dbt_model"
+[0m20:48:48.484474 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:48:48.498075 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:48:49.248814 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.my_first_dbt_model"
+[0m20:48:49.252608 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m20:48:49.888499 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:ebdcf4a4-6b3a-4d10-9543-93262f5e6fab&page=queryresults
+[0m20:48:52.251769 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '216e608f-8cec-478c-9745-fce81c54d98f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabac09dbe0>]}
+[0m20:48:52.253601 [info ] [Thread-1 (]: 2 of 3 OK created sql table model db_dbt_bigquery.my_first_dbt_model ........... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.77s]
+[0m20:48:52.256361 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:48:52.259151 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:48:52.262277 [info ] [Thread-1 (]: 3 of 3 START sql view model db_dbt_bigquery.my_second_dbt_model ................ [RUN]
+[0m20:48:52.264859 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_bigquery_prj.my_first_dbt_model, now model.dbt_bigquery_prj.my_second_dbt_model)
+[0m20:48:52.266819 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:48:52.279423 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.my_second_dbt_model"
+[0m20:48:52.282549 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:48:52.294654 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:48:53.040454 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.my_second_dbt_model"
+[0m20:48:53.041481 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.my_second_dbt_model"} */
+
+
+  create or replace view `dbt-101-430700`.`db_dbt_bigquery`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `dbt-101-430700`.`db_dbt_bigquery`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m20:48:53.576753 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:2b618b31-a969-4c8e-b9a1-268580dcc56a&page=queryresults
+[0m20:48:54.292632 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '216e608f-8cec-478c-9745-fce81c54d98f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7caba5f2f8f0>]}
+[0m20:48:54.293613 [info ] [Thread-1 (]: 3 of 3 OK created sql view model db_dbt_bigquery.my_second_dbt_model ........... [[32mCREATE VIEW (0 processed)[0m in 2.03s]
+[0m20:48:54.294581 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:48:54.296201 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:48:54.296673 [debug] [MainThread]: Connection 'model.dbt_bigquery_prj.my_second_dbt_model' was properly closed.
+[0m20:48:54.297188 [info ] [MainThread]: 
+[0m20:48:54.297722 [info ] [MainThread]: Finished running 2 view models, 1 table model in 0 hours 0 minutes and 9.38 seconds (9.38s).
+[0m20:48:54.299154 [debug] [MainThread]: Command end result
+[0m20:48:54.331772 [info ] [MainThread]: 
+[0m20:48:54.332634 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:48:54.333143 [info ] [MainThread]: 
+[0m20:48:54.333813 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m20:48:54.335041 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.846441, "process_user_time": 3.385174, "process_kernel_time": 0.458659, "process_mem_max_rss": "203900", "process_out_blocks": "2000", "process_in_blocks": "0"}
+[0m20:48:54.335899 [debug] [MainThread]: Command `dbt run` succeeded at 20:48:54.335651 after 10.85 seconds
+[0m20:48:54.336447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabc10f2db0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabc10f0ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabc10b2300>]}
+[0m20:48:54.336947 [debug] [MainThread]: Flushing usage events
+[0m20:50:35.994266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5faa24320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5fa62aae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5faa26870>]}
+
+
+============================== 20:50:35.997984 | a6247132-4342-409a-b00a-b074e80b328c ==============================
+[0m20:50:35.997984 [info ] [MainThread]: Running with dbt=1.8.4
+[0m20:50:35.998853 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/srpantano/dbt-bigquery/dbt_bigquery', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/srpantano/dbt-bigquery/dbt_bigquery/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --full-refresh', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:50:36.999454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a6247132-4342-409a-b00a-b074e80b328c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5e58ec710>]}
+[0m20:50:37.067984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a6247132-4342-409a-b00a-b074e80b328c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5fba74b00>]}
+[0m20:50:37.068896 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m20:50:37.081316 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m20:50:37.189133 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m20:50:37.189815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a6247132-4342-409a-b00a-b074e80b328c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5e5191be0>]}
+[0m20:50:38.772418 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_bigquery.example
+[0m20:50:38.779161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a6247132-4342-409a-b00a-b074e80b328c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5e50f9790>]}
+[0m20:50:38.878213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a6247132-4342-409a-b00a-b074e80b328c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5e5235520>]}
+[0m20:50:38.878963 [info ] [MainThread]: Found 3 models, 4 data tests, 471 macros
+[0m20:50:38.879507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a6247132-4342-409a-b00a-b074e80b328c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5e5191d60>]}
+[0m20:50:38.881911 [info ] [MainThread]: 
+[0m20:50:38.882749 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:50:38.887993 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-101-430700'
+[0m20:50:38.888708 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:50:39.668717 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt-101-430700, now list_dbt-101-430700_db_dbt_bigquery)
+[0m20:50:39.669403 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:50:40.687812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a6247132-4342-409a-b00a-b074e80b328c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5fa06c110>]}
+[0m20:50:40.688724 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:50:40.689273 [info ] [MainThread]: 
+[0m20:50:40.692499 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.customers
+[0m20:50:40.693322 [info ] [Thread-1 (]: 1 of 3 START sql table model db_dbt_bigquery.customers ......................... [RUN]
+[0m20:50:40.694033 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt-101-430700_db_dbt_bigquery, now model.dbt_bigquery_prj.customers)
+[0m20:50:40.694615 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.customers
+[0m20:50:40.702878 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.customers"
+[0m20:50:40.703936 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.customers
+[0m20:50:40.723368 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:50:41.846558 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.customers"
+[0m20:50:41.847747 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.customers: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.customers"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with customers as (
+    select id,
+           first_name,
+           last_name
+    from `dbt-tutorial`.jaffle_shop.customers
+),
+
+orders as (
+     select id,
+            user_id,
+            order_date,
+            status
+    from `dbt-tutorial`.jaffle_shop.orders   
+),
+
+customers_orders as (
+     select user_id,
+            min(order_date) as first_order,
+            max(order_date) as most_recent_order,
+            count(id) as numbers_of_orders
+    from orders
+    group by user_id
+),
+
+final as (
+    select
+        customers.id,
+        customers.first_name,
+        customers.last_name,
+        customers_orders.first_order,
+        customers_orders.most_recent_order,
+        customers_orders.numbers_of_orders
+    from customers
+    left join customers_orders
+    on customers.id = customers_orders.user_id
+)
+
+select * from final
+    );
+  
+[0m20:50:42.554787 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:38b3e1fb-adbb-45bf-9021-10b466d8f359&page=queryresults
+[0m20:50:45.419545 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a6247132-4342-409a-b00a-b074e80b328c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5e5948050>]}
+[0m20:50:45.420608 [info ] [Thread-1 (]: 1 of 3 OK created sql table model db_dbt_bigquery.customers .................... [[32mCREATE TABLE (100.0 rows, 4.3 KiB processed)[0m in 4.72s]
+[0m20:50:45.421617 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.customers
+[0m20:50:45.422293 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:50:45.423286 [info ] [Thread-1 (]: 2 of 3 START sql table model db_dbt_bigquery.my_first_dbt_model ................ [RUN]
+[0m20:50:45.423969 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_bigquery_prj.customers, now model.dbt_bigquery_prj.my_first_dbt_model)
+[0m20:50:45.424514 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:50:45.428122 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.my_first_dbt_model"
+[0m20:50:45.429030 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:50:45.431722 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:50:46.320203 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.my_first_dbt_model"
+[0m20:50:46.321285 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m20:50:46.830886 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:80fd8c95-b03b-4192-affd-db97db52886e&page=queryresults
+[0m20:50:49.187600 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a6247132-4342-409a-b00a-b074e80b328c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5e46d7ad0>]}
+[0m20:50:49.188587 [info ] [Thread-1 (]: 2 of 3 OK created sql table model db_dbt_bigquery.my_first_dbt_model ........... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.76s]
+[0m20:50:49.189579 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.my_first_dbt_model
+[0m20:50:49.190646 [debug] [Thread-1 (]: Began running node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:50:49.191366 [info ] [Thread-1 (]: 3 of 3 START sql table model db_dbt_bigquery.my_second_dbt_model ............... [RUN]
+[0m20:50:49.192027 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_bigquery_prj.my_first_dbt_model, now model.dbt_bigquery_prj.my_second_dbt_model)
+[0m20:50:49.192567 [debug] [Thread-1 (]: Began compiling node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:50:49.196649 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_bigquery_prj.my_second_dbt_model"
+[0m20:50:49.197553 [debug] [Thread-1 (]: Began executing node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:50:49.203015 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:50:50.211353 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_bigquery_prj.my_second_dbt_model"
+[0m20:50:50.212365 [debug] [Thread-1 (]: On model.dbt_bigquery_prj.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.dbt_bigquery_prj.my_second_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-101-430700`.`db_dbt_bigquery`.`my_second_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- Use the `ref` function to select from other models
+
+select *
+from `dbt-101-430700`.`db_dbt_bigquery`.`my_first_dbt_model`
+where id = 1
+    );
+  
+[0m20:50:51.137350 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:2af729a3-4006-445d-936a-812e79010ddc&page=queryresults
+[0m20:50:53.507285 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a6247132-4342-409a-b00a-b074e80b328c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5e46d3ef0>]}
+[0m20:50:53.508316 [info ] [Thread-1 (]: 3 of 3 OK created sql table model db_dbt_bigquery.my_second_dbt_model .......... [[32mCREATE TABLE (1.0 rows, 8.0 Bytes processed)[0m in 4.32s]
+[0m20:50:53.509427 [debug] [Thread-1 (]: Finished running node model.dbt_bigquery_prj.my_second_dbt_model
+[0m20:50:53.510886 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:50:53.511407 [debug] [MainThread]: Connection 'model.dbt_bigquery_prj.my_second_dbt_model' was properly closed.
+[0m20:50:53.511960 [info ] [MainThread]: 
+[0m20:50:53.512486 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 14.63 seconds (14.63s).
+[0m20:50:53.513872 [debug] [MainThread]: Command end result
+[0m20:50:53.544684 [info ] [MainThread]: 
+[0m20:50:53.545378 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:50:53.545878 [info ] [MainThread]: 
+[0m20:50:53.546386 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m20:50:53.547596 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 17.611448, "process_user_time": 5.005159, "process_kernel_time": 0.218889, "process_mem_max_rss": "207180", "process_out_blocks": "2960", "process_in_blocks": "0"}
+[0m20:50:53.548358 [debug] [MainThread]: Command `dbt run` succeeded at 20:50:53.548211 after 17.61 seconds
+[0m20:50:53.548872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5fa62aae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5e7b8b2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad5e5192ed0>]}
+[0m20:50:53.549380 [debug] [MainThread]: Flushing usage events
+[0m21:08:41.344063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76661550b680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76661480a1b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7666151b2540>]}
+
+
+============================== 21:08:41.347803 | bfb8e331-8bc8-449c-a2b8-12ebcaf7f4e9 ==============================
+[0m21:08:41.347803 [info ] [MainThread]: Running with dbt=1.8.4
+[0m21:08:41.348645 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/srpantano/dbt-bigquery/dbt_bigquery', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/home/srpantano/dbt-bigquery/dbt_bigquery/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt seed', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:08:42.339716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bfb8e331-8bc8-449c-a2b8-12ebcaf7f4e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76661394a870>]}
+[0m21:08:42.407992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bfb8e331-8bc8-449c-a2b8-12ebcaf7f4e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76660f54d340>]}
+[0m21:08:42.408901 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m21:08:42.421242 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m21:08:42.558620 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m21:08:42.559501 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery_prj://seeds/stadium_cleaned.csv
+[0m21:08:42.838589 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_bigquery.example
+[0m21:08:42.846563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bfb8e331-8bc8-449c-a2b8-12ebcaf7f4e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7665fab82390>]}
+[0m21:08:42.956595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bfb8e331-8bc8-449c-a2b8-12ebcaf7f4e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7665fa8be330>]}
+[0m21:08:42.957286 [info ] [MainThread]: Found 3 models, 4 data tests, 1 seed, 471 macros
+[0m21:08:42.957819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bfb8e331-8bc8-449c-a2b8-12ebcaf7f4e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x766613a164e0>]}
+[0m21:08:42.960098 [info ] [MainThread]: 
+[0m21:08:42.960953 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:08:42.962203 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-101-430700'
+[0m21:08:42.962758 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:08:43.879368 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt-101-430700, now list_dbt-101-430700_db_dbt_bigquery)
+[0m21:08:43.880082 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:08:44.873799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bfb8e331-8bc8-449c-a2b8-12ebcaf7f4e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7665faab53a0>]}
+[0m21:08:44.874707 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:08:44.875256 [info ] [MainThread]: 
+[0m21:08:44.878270 [debug] [Thread-1 (]: Began running node seed.dbt_bigquery_prj.stadium_cleaned
+[0m21:08:44.879135 [info ] [Thread-1 (]: 1 of 1 START seed file db_dbt_bigquery.stadium_cleaned ......................... [RUN]
+[0m21:08:44.879857 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt-101-430700_db_dbt_bigquery, now seed.dbt_bigquery_prj.stadium_cleaned)
+[0m21:08:44.880499 [debug] [Thread-1 (]: Began compiling node seed.dbt_bigquery_prj.stadium_cleaned
+[0m21:08:44.881095 [debug] [Thread-1 (]: Began executing node seed.dbt_bigquery_prj.stadium_cleaned
+[0m21:08:44.926057 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:08:51.276043 [debug] [Thread-1 (]: On seed.dbt_bigquery_prj.stadium_cleaned: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "seed.dbt_bigquery_prj.stadium_cleaned"} */
+
+    alter table `dbt-101-430700`.`db_dbt_bigquery`.`stadium_cleaned` set OPTIONS()
+  
+[0m21:08:51.881480 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-101-430700&j=bq:US:cdea6a74-6836-472f-9ec8-bee2285c3bc3&page=queryresults
+[0m21:08:52.611757 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_bigquery_prj.stadium_cleaned"
+[0m21:08:52.636678 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bfb8e331-8bc8-449c-a2b8-12ebcaf7f4e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x766615147fe0>]}
+[0m21:08:52.637542 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file db_dbt_bigquery.stadium_cleaned ..................... [[32mINSERT 381[0m in 7.76s]
+[0m21:08:52.638518 [debug] [Thread-1 (]: Finished running node seed.dbt_bigquery_prj.stadium_cleaned
+[0m21:08:52.640484 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:08:52.640973 [debug] [MainThread]: Connection 'seed.dbt_bigquery_prj.stadium_cleaned' was properly closed.
+[0m21:08:52.641431 [info ] [MainThread]: 
+[0m21:08:52.641934 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 9.68 seconds (9.68s).
+[0m21:08:52.642900 [debug] [MainThread]: Command end result
+[0m21:08:52.676070 [info ] [MainThread]: 
+[0m21:08:52.676786 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:08:52.677279 [info ] [MainThread]: 
+[0m21:08:52.677782 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m21:08:52.678970 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 11.392562, "process_user_time": 3.585939, "process_kernel_time": 0.229563, "process_mem_max_rss": "206856", "process_in_blocks": "16", "process_out_blocks": "2912"}
+[0m21:08:52.679721 [debug] [MainThread]: Command `dbt seed` succeeded at 21:08:52.679574 after 11.39 seconds
+[0m21:08:52.680227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x766613c3d8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x766613c3e060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7666151b2540>]}
+[0m21:08:52.680725 [debug] [MainThread]: Flushing usage events
